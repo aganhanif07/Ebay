@@ -1,2 +1,26 @@
 # Ebay
 
+# eBay AI Scraper API
+
+API untuk melakukan web scraping produk dari eBay dan mengekstrak data menggunakan AI (OpenAI/Deepseek).  
+Hasil akhir berupa JSON berisi **nama produk**, **harga**, dan **deskripsi** dari halaman pencarian atau halaman detail produk.
+
+# Fitur
+- Scraping produk dari eBay (mendukung pagination).
+- Mengambil **nama**, **harga**, dan **deskripsi** dari halaman detail.
+- Menggunakan AI untuk parsing HTML dan membersihkan data.
+- Output dalam format JSON.
+- Fallback `"-"` jika data kosong.
+
+# Instalasi
+```bash
+git clone https://github.com/<username>/<repo-name>.git
+cd <repo-name>
+npm install
+
+# konfigurasi
+membuat file .env dan mengisi API key
+OPENAI_API_KEY=sk-xxxx
+
+# menjalankan
+node app.js
